@@ -61,3 +61,5 @@ https://www.prestashop.com/es/descarga
 
 Prestashop dispone de una demo online en la cual puedes probar el software.
 http://demo.prestashop.com/es/?view=front
+
+
