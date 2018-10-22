@@ -56,10 +56,8 @@ https://www.shopping-cart-migration.com/migration-pricing
 
 *********************** Instalacion ********************
 Descargar:
-Podremos descargar el programa desde el siguiente enlace oficial:ç
+Podremos descargar el programa desde el siguiente enlace oficial:
 https://www.prestashop.com/es/descarga
 
 Prestashop dispone de una demo online en la cual puedes probar el software.
 http://demo.prestashop.com/es/?view=front
-
-
