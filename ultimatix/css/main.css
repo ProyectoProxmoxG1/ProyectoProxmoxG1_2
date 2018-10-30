@@ -1,4 +1,4 @@
-/* 
+ /* 
 
 #00b8ff	(0,184,255)
 #009bd6	(0,155,214)
@@ -32,8 +32,10 @@ body {
 .up-button {
     position: fixed;
     right: 0;
-    bottom: 0;
-    display: inline-block;
+	bottom: 0;
+	/*Modificado de inline-block a flex*/
+	display: flex;
+	flex-wrap: wrap;
     max-width: 50px;
     padding: 20px;
     padding-bottom: 5px;
@@ -56,6 +58,11 @@ body {
 h1 {
 	color: #00b8ff;
 	margin-bottom: 35px;
+}
+
+h2{
+	color: #000000;
+	text-align: left;
 }
 
 p {
@@ -117,6 +124,10 @@ section {
     display: flex;
     align-items: center;
     margin-bottom: 40px;
+}
+
+p{
+	text-align: left;
 }
 
 .column {
