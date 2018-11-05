@@ -1,17 +1,19 @@
 <!DOCTYPE html>
 <html lang="">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 	<meta name="title" content="Ultimatix">
 	<meta name="description" content="Grupo 1 de DAW 2.">
-	<link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
-    <title>Ultimatix</title>
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
-    <link rel="stylesheet" href="fonts/styles.css">
-    <link rel="stylesheet" href="css/animate.css">
-    <link rel="stylesheet" href="css/main.css">
+	<link rel="shortcut icon" type="image/png" href="images/favicon.png" />
+	<title>Ultimatix</title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+	<link rel="stylesheet" href="fonts/styles.css">
+	<link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" href="css/main.css">
 </head>
+
 <body>
 	<section id="menu">
 		<ul>
@@ -28,17 +30,20 @@
 	<a href="#menu" class="up-button bounceIn"><img src="img/menu-button.png"></a>
 	<section>
 		<h1>Wordpress</h1>
+		<h2>MySQL</h2>
 		<div class="column-wrapper">
 			<div class="column">
 				<img src="img/wordpress/1.png" class="bounceIn">
 			</div>
 			<div class="column">
-				<p>Lo primero de todo es crear la base de datos para WordPress , para ello vamos a acceder con la cuenta de administrador a MySQL.</p>
+				<p>Lo primero de todo es crear la base de datos para WordPress , para ello vamos a acceder con la cuenta de
+					administrador a MySQL.</p>
 			</div>
 		</div>
 		<div class="column-wrapper">
 			<div class="column">
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur velit nisl, blandit sed justo non, rhoncus dapibus urna.</p>
+				<p>
+					Tras eso vamos a crear la base de datos.</p>
 			</div>
 			<div class="column">
 				<img src="img/wordpress/2.png" class="bounceIn">
@@ -49,15 +54,19 @@
 				<img src="img/wordpress/3.png" class="bounceIn">
 			</div>
 			<div class="column">
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur velit nisl, blandit sed justo non, rhoncus dapibus urna.</p>
+				<p>A continuación vamos a crear una cuenta , darle una contraseña y darle permisos.
+				</p>
 			</div>
 		</div>
+		<h2>Instalacion de Extensiones</h2>
 		<div class="column-wrapper">
 			<div class="column">
-				<img src="img/wordpress/4.png" class="bounceIn">
+				<p>
+					Hacemos un update y después instalamos los módulos necesarios para la instalación de WordPress.
+				</p>
 			</div>
 			<div class="column">
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur velit nisl, blandit sed justo non, rhoncus dapibus urna.</p>
+				<img src="img/wordpress/4.png" class="bounceIn">
 			</div>
 		</div>
 		<div class="column-wrapper">
@@ -65,9 +74,176 @@
 				<img src="img/wordpress/5.png" class="bounceIn">
 			</div>
 			<div class="column">
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur velit nisl, blandit sed justo non, rhoncus dapibus urna.</p>
+				<p>Después reiniciamos para activar los nuevos módulos.
+				</p>
+			</div>
+		</div>
+		<h2>Apache</h2>
+		<div class="column-wrapper">
+			<div class="column">
+				<p>
+					Ahora tenemos que modificar dentro de un fichero la ruta donde queremos guardar la configuración.
+
+El fichero es el siguiente.
+</p>
+			</div>
+			<div class="column">
+				<img src="img/wordpress/6.png" class="bounceIn">
+			</div>
+		</div>
+		<div class="column-wrapper">
+			<div class="column">
+				<img src="img/wordpress/7.png" class="bounceIn">
+			</div>
+			<div class="column">
+				<p>Y dentro de él vamos a introducir nuestra ruta entre los siguientes parámetros.
+				</p>
+			</div>
+		</div>
+		<div class="column-wrapper">
+			<div class="column">
+				<p>
+					Lo siguiente es activar el mod_rewrite para poder utilizar la característica de Permalink de WordPress , el cual en nuestro caso ya estaba activado.
+</p>
+			</div>
+			<div class="column">
+				<img src="img/wordpress/8.png" class="bounceIn">
+			</div>
+		</div>
+		<div class="column-wrapper">
+			<div class="column">
+				<img src="img/wordpress/9.png" class="bounceIn">
+			</div>
+			<div class="column">
+				<p>
+					Ahora con el siguiente comando vamos a comprobar que no hemos cometido ningún error de Sintaxis.
+					</p>
+			</div>
+		</div>
+		<div class="column-wrapper">
+			<div class="column">
+				<p>
+					Volvemos a reiniciar Apache.</p>
+			</div>
+			<div class="column">
+				<img src="img/wordpress/10.png" class="bounceIn">
+			</div>
+		</div>
+		<h2>Descargar Wordpress</h2>
+		<div class="column-wrapper">
+			<div class="column">
+				<img src="img/wordpress/11.png" class="bounceIn">
+			</div>
+			<div class="column">
+				<p>Antes de descargar vamos a crear una carpeta temporal para instalar wordpress.
+				</p>
+			</div>
+		</div>
+		<div class="column-wrapper">
+			<div class="column">
+				<p>
+					Ahora vamos a extraer para crear la estructura de wordpress.</p>
+			</div>
+			<div class="column">
+				<img src="img/wordpress/12.png" class="bounceIn">
+			</div>
+		</div>
+		<div class="column-wrapper">
+			<div class="column">
+				<img src="img/wordpress/13.png" class="bounceIn">
+			</div>
+			<div class="column">
+				<p>Creamos las carpetas donde vamos a meter los archivos.
+				</p>
+			</div>
+		</div>
+		<div class="column-wrapper">
+			<div class="column">
+				<p>
+					Copiamos el archivo de configuración en la nueva carpeta.</p>
+			</div>
+			<div class="column">
+				<img src="img/wordpress/14.png" class="bounceIn">
+			</div>
+		</div>
+		<div class="column-wrapper">
+			<div class="column">
+				<img src="img/wordpress/15.png" class="bounceIn">
+			</div>
+			<div class="column">
+				<p>Ahora hacemos un directorio Upgrade para que no tenga problemas con permisos.</p>
+			</div>
+		</div>
+		<div class="column-wrapper">
+			<div class="column">
+				<p>
+					Por último movemos todo esto a nuestra carpeta de Wordpress en el servidor.
+</p>
+			</div>
+			<div class="column">
+				<img src="img/wordpress/16.png" class="bounceIn">
+			</div>
+		</div>
+		<h2>Configuracion del directorio WordPress</h2>
+		<div class="column-wrapper">
+			<div class="column">
+				<img src="img/wordpress/17.png" class="bounceIn">
+			</div>
+			<div class="column">
+				<p>Vamos a cambiar el propietario y permisos de esas carpetas.</p>
+			</div>
+		</div>
+		<h2>Instalacion desde la interfaz</h2>
+		<div class="column-wrapper">
+			<div class="column">
+				<p>
+					Ahora accedemos a wordpress mediante nuestro servidor.
+Lo primero que nos pedira es en que idioma vamos a querer usar Wordpress.
+</p>
+			</div>
+			<div class="column">
+				<img src="img/wordpress/18.png" class="bounceIn">
+			</div>
+		</div>
+		<div class="column-wrapper">
+			<div class="column">
+				<img src="img/wordpress/19.png" class="bounceIn">
+			</div>
+			<div class="column">
+				<p>A continuacion rellenaremos el formulario de registro con la informacion necesaria.
+				</p>
+			</div>
+		</div>
+		<div class="column-wrapper">
+			<div class="column">
+				<p>
+					En caso de haber rellenado todo correctamente se nos mostrara la siguiente imagen.
+</p>
+			</div>
+			<div class="column">
+				<img src="img/wordpress/20.png" class="bounceIn">
+			</div>
+		</div>
+		<div class="column-wrapper">
+			<div class="column">
+				<img src="img/wordpress/21.png" class="bounceIn">
+			</div>
+			<div class="column">
+				<p>Procedemos a iniciar con nuestras credenciales.
+				</p>
+			</div>
+		</div>
+		<div class="column-wrapper">
+			<div class="column">
+				<p>
+					Una vez hayamos iniciado se nos llevara a nuestro panel de control de Wordpress donde podremos acceder a distintas funciones.
+</p>
+			</div>
+			<div class="column">
+				<img src="img/wordpress/22.png" class="bounceIn">
 			</div>
 		</div>
 	</section>
 </body>
+
 </html>
