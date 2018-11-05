@@ -17,7 +17,7 @@
 		<ul>
 			<li><a href="index.html">Introducción</a></li>
 			<li><a href="wordpress.html">Wordpress</a></li>
-			<li><a href="instalacion-contenedores.html">Instalación Contenedores</a></li>
+			<li><a href="prestashop.html">Prestashop</a></li>
 			<li><a href="instalacion-LAMP.html">Instalación LAMP</a></li>
 			<li><a href="instalacion-GIT.html">Intalación GIT</a></li>
 		</ul>
@@ -31,7 +31,7 @@
 		<h2>Instalacion</h2>
 		<div class="column-wrapper">
 			<div class="column">
-				<img src="img/prestashop1.png" class="bounceIn">
+				<img src="img/Prestashop/prestashop1.png" class="bounceIn">
 			</div>
 			<div class="column">
 				<p>Entrando en la pagina oficial de PrestaShop podremos bajarnos gratuitamente el programa de instalación.</p>
@@ -55,12 +55,12 @@
 						<b>chown -hR www-data ProyectoProxmoxProyectoProxmoxG1_2/PrestaShop/</b></p>
 			</div>
 			<div class="column">
-				<img src="img/prestashop2.png" class="bounceIn">
+				<img src="img/Prestashop/prestashop2.png" class="bounceIn">
 			</div>
 		</div>
 		<div class="column-wrapper">
 			<div class="column">
-				<img src="img/prestashop3.png" class="bounceIn">
+				<img src="img/Prestashop/prestashop3.png" class="bounceIn">
 			</div>
 			<div class="column">
 				<p>Antes de empezar con la instalación prepararemos la base de datos que necesitaremos para completar el proceso:<br/>
@@ -68,21 +68,75 @@
 			</div>
 		</div>
 		<div class="column-wrapper">
-				<div class="column">
-					<p></p>
-				</div>
-				<div class="column">
-					<img src="img/prestashop2.png" class="bounceIn">
-				</div>
+			<div class="column">
+				<p>Creamos un usuario y le damos privilegios sobre la base de datos que usaremos:<br/>
+					<b>CREATE USER ‘Prestashop’@’localhost’ IDENTIFIED BY ‘*********’;</b></p>
 			</div>
-			<div class="column-wrapper">
-				<div class="column">
-					<img src="img/prestashop3.png" class="bounceIn">
-				</div>
-				<div class="column">
-					<p></p>
-				</div>
+			<div class="column">
+				<img src="img/Prestashop/prestashop4.png" class="bounceIn">
 			</div>
+		</div>
+		<div class="column-wrapper">
+			<div class="column">
+				<img src="img/Prestashop/prestashop5.png" class="bounceIn">
+			</div>
+			<div class="column">
+				<p>Entramos en la dirección IP del servidor para poder acceder al proceso de instalación:<br/>
+					<b>10.9.52.104/</b></p>
+			</div>
+		</div>
+		<h2>Configuracion desde el Cliente Web</h2>
+	</div>
+	<div class="column-wrapper">
+		<div class="column">
+			<p>Seguimos los pasos en las diferentes pantallas rellenando los campos que nos soliciten:</p>
+		</div>
+		<div class="column">
+			<img src="img/Prestashop/prestashop6.png" class="bounceIn">
+		</div>
+	</div>
+	<div class="column-wrapper">
+		<div class="column">
+			<img src="img/Prestashop/prestashop7.png" class="bounceIn">
+		</div>
+		<div class="column">
+			<p>En el tercer paso surgió el siguiente fallo:</p>
+		</div>
+	</div>
+	<div class="column-wrapper">
+		<div class="column">
+			<p>Lo solucionamos activando el modulo solicitado con el siguiente comando y reiniciando Apache:<br/>
+				<b>a2enmod rewrite</b><br/>
+				<b>systemctl restart apache2</b></p>
+		</div>
+		<div class="column">
+			<img src="img/Prestashop/prestashop8.png" class="bounceIn">
+		</div>
+	</div>
+	<div class="column-wrapper">
+		<div class="column">
+			<img src="img/Prestashop/prestashop9.png" class="bounceIn">
+		</div>
+		<div class="column">
+			<p>Tras ello, pudimos reanudar las instalacion.</p>
+		</div>
+	</div>
+	<div class="column-wrapper">
+		<div class="column">
+			<p>Tras rellenar todos los formularios, el instalador continuará con la configuración:</p>
+		</div>
+		<div class="column">
+			<img src="img/Prestashop/prestashop10.png" class="bounceIn">
+		</div>
+	</div>
+	<div class="column-wrapper">
+		<div class="column">
+			<img src="img/Prestashop/prestashop11.png" class="bounceIn">
+		</div>
+		<div class="column">
+			<p>Si la instalacion ha finalizado correctamente, se mostrara la siguiente ventana.</p>
+		</div>
+	</div>
 	</section>
 </body>
 </html>
