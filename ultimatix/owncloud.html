@@ -53,219 +53,192 @@
 	</div>
 	<a href="#menu" class="up-button"><img src="img/menu-button.png"></a>
 	<section>
-		<h1>Wordpress</h1>
-		<p><iframe style="max-width:100%;" width="560" height="315" src="https://www.youtube.com/embed/XG_TSJPXrk0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
-		<h2>MySQL</h2>
+		<h1>Owncloud</h1>
+		<h2>¿Qué es OwnCloud?</h2>
+		<p>ownCloud es una de software libre de alojamiento de archivos en línea. Este puede ser instalado en un servidor que disponga de PHP y que tenga soporte para base de datos(MySQL).</p>
+		<h2>Como instalar</h2>
+		<p>Para instalar OwnCloud (Server) seguiremos los siguientes pasos.</p>
 		<div class="column-wrapper">
 			<div class="column">
-				<img src="img/wordpress/1.png" class="bounceIn">
+				<img src="img/owncloud/1.png">
 			</div>
 			<div class="column">
-				<p>Lo primero de todo es crear la base de datos para WordPress , para ello vamos a acceder con la cuenta de
-					administrador a MySQL.</p>
+				<p>Lo primero que tenemos que hacer es ir a la sección Download de la página de Owncloud.</p>
 			</div>
 		</div>
 		<div class="column-wrapper">
 			<div class="column">
-				<p>
-					Tras eso vamos a crear la base de datos.</p>
+				<img src="img/owncloud/2.png">
 			</div>
 			<div class="column">
-				<img src="img/wordpress/2.png" class="bounceIn">
-			</div>
-		</div>
-		<div class="column-wrapper">
-			<div class="column">
-				<img src="img/wordpress/3.png" class="bounceIn">
-			</div>
-			<div class="column">
-				<p>A continuación vamos a crear una cuenta , darle una contraseña y darle permisos.
-				</p>
-			</div>
-		</div>
-		<h2>Instalacion de Extensiones</h2>
-		<div class="column-wrapper">
-			<div class="column">
-				<p>
-					Hacemos un update y después instalamos los módulos necesarios para la instalación de WordPress.
-				</p>
-			</div>
-			<div class="column">
-				<img src="img/wordpress/4.png" class="bounceIn">
+				<p>Allí seleccionaremos el formato en el que deseamos descargarlo.</p>
 			</div>
 		</div>
 		<div class="column-wrapper">
 			<div class="column">
-				<img src="img/wordpress/5.png" class="bounceIn">
+				<img src="img/owncloud/3.png">
 			</div>
 			<div class="column">
-				<p>Después reiniciamos para activar los nuevos módulos.
-				</p>
-			</div>
-		</div>
-		<h2>Apache</h2>
-		<div class="column-wrapper">
-			<div class="column">
-				<p>
-					Ahora tenemos que modificar dentro de un fichero la ruta donde queremos guardar la configuración.
-
-					El fichero es el siguiente.
-				</p>
-			</div>
-			<div class="column">
-				<img src="img/wordpress/6.png" class="bounceIn">
+				<p>Después extraemos de la siguiente manera.</p>
 			</div>
 		</div>
 		<div class="column-wrapper">
 			<div class="column">
-				<img src="img/wordpress/7.png" class="bounceIn">
+				<img src="img/owncloud/4.png">
 			</div>
 			<div class="column">
-				<p>Y dentro de él vamos a introducir nuestra ruta entre los siguientes parámetros.
-				</p>
-			</div>
-		</div>
-		<div class="column-wrapper">
-			<div class="column">
-				<p>
-					Lo siguiente es activar el mod_rewrite para poder utilizar la característica de Permalink de WordPress , el cual en nuestro caso ya estaba activado.
-				</p>
-			</div>
-			<div class="column">
-				<img src="img/wordpress/8.png" class="bounceIn">
+				<p>La ruta de extracción será la de nuestro servidor apache /var/www/”tu ruta de owncloud”</p>
 			</div>
 		</div>
 		<div class="column-wrapper">
 			<div class="column">
-				<img src="img/wordpress/9.png" class="bounceIn">
+				<img src="img/owncloud/5.png">
 			</div>
 			<div class="column">
-				<p>
-					Ahora con el siguiente comando vamos a comprobar que no hemos cometido ningún error de Sintaxis.
-				</p>
+				<p>Una vez hayamos extraído accederemos desde nuestra ip de grupo. Desde allí accederemos a Owncloud.</p>
 			</div>
 		</div>
 		<div class="column-wrapper">
 			<div class="column">
-				<p>
-					Volvemos a reiniciar Apache.</p>
+				<img src="img/owncloud/6.png">
 			</div>
 			<div class="column">
-				<img src="img/wordpress/10.png" class="bounceIn">
-			</div>
-		</div>
-		<h2>Descargar Wordpress</h2>
-		<div class="column-wrapper">
-			<div class="column">
-				<img src="img/wordpress/11.png" class="bounceIn">
-			</div>
-			<div class="column">
-				<p>Antes de descargar vamos a crear una carpeta temporal para instalar wordpress.
-				</p>
+				<p>Una vez dentro rellenamos esta primera parte del formulario con la cuenta que vamos a querer usar en Owncloud y la ruta del Directorio.</p>
 			</div>
 		</div>
 		<div class="column-wrapper">
 			<div class="column">
-				<p>
-					Ahora vamos a extraer para crear la estructura de wordpress.</p>
+				<p>Aqui rellenamos el formulario relacionado con la base datos , pero antes , debemos crearla de la siguiente manera:</p>
 			</div>
 			<div class="column">
-				<img src="img/wordpress/12.png" class="bounceIn">
-			</div>
-		</div>
-		<div class="column-wrapper">
-			<div class="column">
-				<img src="img/wordpress/13.png" class="bounceIn">
-			</div>
-			<div class="column">
-				<p>Creamos las carpetas donde vamos a meter los archivos.
-				</p>
+				<img src="img/owncloud/7.png">
 			</div>
 		</div>
 		<div class="column-wrapper">
 			<div class="column">
-				<p>
-					Copiamos el archivo de configuración en la nueva carpeta.</p>
-			</div>
-			<div class="column">
-				<img src="img/wordpress/14.png" class="bounceIn">
+				<img src="img/owncloud/8.png">
 			</div>
 		</div>
 		<div class="column-wrapper">
 			<div class="column">
-				<img src="img/wordpress/15.png" class="bounceIn">
+				<img src="img/owncloud/9.png">
 			</div>
 			<div class="column">
-				<p>Ahora hacemos un directorio Upgrade para que no tenga problemas con permisos.</p>
-			</div>
-		</div>
-		<div class="column-wrapper">
-			<div class="column">
-				<p>
-					Por último movemos todo esto a nuestra carpeta de Wordpress en el servidor.
-				</p>
-			</div>
-			<div class="column">
-				<img src="img/wordpress/16.png" class="bounceIn">
-			</div>
-		</div>
-		<h2>Configuracion del directorio WordPress</h2>
-		<div class="column-wrapper">
-			<div class="column">
-				<img src="img/wordpress/17.png" class="bounceIn">
-			</div>
-			<div class="column">
-				<p>Vamos a cambiar el propietario y permisos de esas carpetas.</p>
-			</div>
-		</div>
-		<h2>Instalacion desde la interfaz</h2>
-		<div class="column-wrapper">
-			<div class="column">
-				<p>
-					Ahora accedemos a wordpress mediante nuestro servidor.
-					Lo primero que nos pedira es en que idioma vamos a querer usar Wordpress.
-				</p>
-			</div>
-			<div class="column">
-				<img src="img/wordpress/18.png" class="bounceIn">
+				<p>NOTA: Durante la configuración en este formulario puede aparecer el siguiente error</p>
 			</div>
 		</div>
 		<div class="column-wrapper">
 			<div class="column">
-				<img src="img/wordpress/19.png" class="bounceIn">
+				<img src="img/owncloud/10.png">
 			</div>
 			<div class="column">
-				<p>A continuacion rellenaremos el formulario de registro con la informacion necesaria.
-				</p>
-			</div>
-		</div>
-		<div class="column-wrapper">
-			<div class="column">
-				<p>
-					En caso de haber rellenado todo correctamente se nos mostrara la siguiente imagen.
-				</p>
-			</div>
-			<div class="column">
-				<img src="img/wordpress/20.png" class="bounceIn">
+				<p>Para arreglarlo debemos dar permisos a la carpeta con el siguiente comando: chown -R www-data /Proyecto Proxmox/Proyecto Proxmox 1_2/Owncloud/owncloud</p>
 			</div>
 		</div>
 		<div class="column-wrapper">
 			<div class="column">
-				<img src="img/wordpress/21.png" class="bounceIn">
+				<img src="img/owncloud/11.png">
 			</div>
 			<div class="column">
-				<p>Procedemos a iniciar con nuestras credenciales.
-				</p>
+				<p>Tras eso tardara unos segundos en completar la instalacion y despues nos llevará a la pantalla del login que vemos ahora donde iniciaremos con nuestras credenciales.</p>
 			</div>
 		</div>
 		<div class="column-wrapper">
 			<div class="column">
-				<p>
-					Una vez hayamos iniciado se nos llevara a nuestro panel de control de Wordpress donde podremos acceder a distintas funciones.
-				</p>
+				<img src="img/owncloud/12.png">
 			</div>
 			<div class="column">
-				<img src="img/wordpress/22.png" class="bounceIn">
+				<p>Tras iniciar sesión accederemos a la Interfaz gráfica donde podemos subir y bajar nuestros archivos.</p>
+			</div>
+		</div>
+		<div class="column-wrapper">
+			<div class="column">
+				<img src="img/owncloud/13.png">
+			</div>
+			<div class="column">
+				<p>También podemos administrar nuevos usuarios desde la pestaña de usuarios a la que accedemos clickando en la flechita al lado de tu nombre (parte superior derecha) y accediendo a la sección “usuarios”.</p>
+			</div>
+		</div>
+		<h2>Instalación CLIENTE</h2>
+		<p>Para instalar OwnCloud (Cliente) seguiremos los siguientes pasos.</p>
+		<div class="column-wrapper">
+			<div class="column">
+				<img src="img/owncloud/14.png">
+			</div>
+			<div class="column">
+				<p>Lo primero que tenemos que hacer es ir a la sección de Download de Owncloud <a href="https://owncloud.org/download/">https://owncloud.org/download/</a> Allí descargamos lo siguiente</p>
+			</div>
+		</div>
+		<div class="column-wrapper">
+			<div class="column">
+				<img src="img/owncloud/15.png">
+			</div>
+			<div class="column">
+				<p>Tras descargar ejecutamos el instalador. Al ejecutarlo se nos mostrará la siguiente pantalla en la que debemos introducir nuestra dirección de servidor.</p>
+			</div>
+		</div>
+		<div class="column-wrapper">
+			<div class="column">
+				<img src="img/owncloud/16.png">
+			</div>
+			<div class="column">
+				<p>Tras esto, debemos iniciar con las mismas credenciales que en la parte de servidor.</p>
+			</div>
+		</div>
+		<div class="column-wrapper">
+			<div class="column">
+				<img src="img/owncloud/17.png">
+			</div>
+			<div class="column">
+				<p>Tras introducir las credenciales nos puede salir un error, en el cual se nos indica que nos faltan deiferentes modulos.</p>
+			</div>
+		</div>
+		<div class="column-wrapper">
+			<div class="column">
+				<img src="img/owncloud/18.png">
+			</div>
+			<div class="column">
+				<p>Para arreglar este problema, vamos a instalar cada uno de ellos desde nuestra consola.</p>
+			</div>
+		</div>
+		<div class="column-wrapper">
+			<div class="column">
+				<img src="img/owncloud/19.png">
+			</div>
+			<div class="column">
+				<p>Tras esto, al loguearnos satisfactoriamente , nos preguntara como y en que carpeta deseamos sincronizar.</p>
+			</div>
+		</div>
+		<div class="column-wrapper">
+			<div class="column">
+				<img src="img/owncloud/20.png">
+			</div>
+			<div class="column">
+				<p>Una vez dentro se nos mostrarán distintas pestañas. En la primera podemos administrar tanto la sincronización , como nuestras carpetas asi como una pestañita de “cuenta” donde podremos añadir usuarios.</p>
+			</div>
+		</div>
+		<div class="column-wrapper">
+			<div class="column">
+				<img src="img/owncloud/21.png">
+			</div>
+			<div class="column">
+				<p>La pestaña “Actividad” donde podemos comprobar cuales son los ultimos archivos sincronizados y cuales están sin sincronizar.</p>
+			</div>
+		</div>
+		<div class="column-wrapper">
+			<div class="column">
+				<img src="img/owncloud/22.png">
+			</div>
+			<div class="column">
+				<p>La pestaña “General” donde podemos cambiar distintos parámetros de configuración.</p>
+			</div>
+		</div>
+		<div class="column-wrapper">
+			<div class="column">
+				<img src="img/owncloud/23.png">
+			</div>
+			<div class="column">
+				<p>Y por último la pestaña red donde podemos cambiar parámetros relacionados con el proxy  o con la velocidad de transferencia de datos.</p>
 			</div>
 		</div>
 	</section>
